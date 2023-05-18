@@ -11,12 +11,9 @@ let lnameErr = document.querySelector("#lastNameErr")
 let emailErr = document.querySelector("#emailErr")
 let passwordErr = document.querySelector("#passwordErr")
 
-let something = `<i class="fa-solid fa-circle-exclamation" style="color: #ff7a7a;"></i>`
-
 form.addEventListener('submit', (e)=>{
     if(fName.value === '' || fName.value == null){
         fName.classList.add('invalidInput');
-        fName.value = something
         fnameErr.innerHTML = `First name cannot be empty`
         e.preventDefault();
     }
